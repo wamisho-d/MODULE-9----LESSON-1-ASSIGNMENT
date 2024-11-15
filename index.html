@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Register Your Product</h1>
+        <div class="progress-bar">
+            <div class="step completed">Step 1</div>
+            <div class="step">Step 2</div>
+            <div class="step">Step 3</div>
+        </div>
+
+        <form id="registrationForm">
+            <!-- Step 1: Contact Information -->
+            <div class="form-step active">
+                <h2>Contact Information</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="button" class="next">Next</button>
+            </div>
+
+            <!-- Step 2: Product Information -->
+            <div class="form-step">
+                <h2>Product Information</h2>
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" name="productName" required>
+
+                <label for="serialNumber">Serial Number</label>
+                <input type="text" id="serialNumber" name="serialNumber" required>
+
+                <button type="button" class="prev">Previous</button>
+                <button type="button" class="next">Next</button>
+            </div>
+
+            <!-- Step 3: Confirmation -->
+            <div class="form-step">
+                <h2>Confirm Registration</h2>
+                <p>Review your information and submit.</p>
+                <button type="button" class="prev">Previous</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div id="successMessage" class="success-message">
+            <p>Thank you! Your product has been registered successfully.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
